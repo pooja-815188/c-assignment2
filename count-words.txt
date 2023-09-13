@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    char str[20]="my name is pooja";
+    int i=0,count=1;
+    while(str[i]!='\0')
+    {
+        if(str[i]==' ' || str[i]=='\n' || str[i]=='\t')
+        {
+            count++;
+        }
+        i++;
+    }
+    printf("count=%d\n",count);
+}
